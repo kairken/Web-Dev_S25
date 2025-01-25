@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Change Header Color</title>
+    <style>
+      h1 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
+
+Which CSS property is used to italicize text?
+font-style: italic;
+
+Which CSS property is used to underline text?
+text-decoration: underline;
+
+Which CSS property is used to UPPERCASE text?
+text-transform: uppercase;
+
+Which CSS property is used to bold text?
+font-weight: bold;
