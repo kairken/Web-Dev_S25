@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .main{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            max-width: 980px;
+            width: 100%;
+        }
+        .left{
+            flex:1;
+            margin-right: 50px;
+            max-width: 500px;
+        }
+        .left h1{
+            color:#1877f2;
+            font-size:52px;
+        }
+        .right{
+            background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+        }
+        .login{
+            width: 100%;
+        }
+        .login input{
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+        }
+        .loginbutton{
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .forgotpassword{
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            
+        }
+        .createaccount{
+            background: #42b72a;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            width: auto;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Facebook</h1>
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="right">
+            <form class="login">
+                <input type="text" placeholder="Электронный адрес или номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit" class="loginbutton">Вход</button>
+                <a href="#" class="forgotpassword">Забыли пароль?</a>
+                <hr>
+                <button type="button" class="createaccount">Создать аккаунт</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
