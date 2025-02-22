@@ -1,0 +1,15 @@
+<div class="product-card">
+  <img class="product-image" [src]="product.image" alt="{{ product.title }}" />
+  <div class="product-header">
+    <h3>{{ product.title }}</h3>
+  </div>
+  <div class="product-details">
+    <p>Price: {{ product.price }} tenge</p>
+    <p>Likes: <span class="likes-count">{{ product.likes }}</span></p>
+  </div>
+  <div class="buttons">
+    <button class="delete-btn" (click)="onDeleteClick()">Delete</button>
+    <button class="like-btn" (click)="onLikeClick()">Like</button>
+    <button class="share-btn" (click)="onShareClick()">Share</button>
+  </div>
+</div>

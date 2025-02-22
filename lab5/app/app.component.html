@@ -1,0 +1,12 @@
+<div class="app-container">
+  <h1 class="header">My Online Store</h1>
+  <div class="category-buttons">
+    <button
+      *ngFor="let cat of categories"
+      [class.active]="selectedCategory === cat"
+      (click)="onCategorySelect(cat)">
+      {{ cat }}
+    </button>
+  </div>
+  <app-product-list [products]="filteredProducts"></app-product-list>
+</div>
