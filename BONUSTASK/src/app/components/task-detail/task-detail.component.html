@@ -1,0 +1,8 @@
+<div *ngIf="task" class="task-detail">
+  <h2>{{ task.title }}</h2>
+  <p>Описание: {{ task.description }}</p>
+  <p>Категория: {{ task.category }}</p>
+  <p>Статус: {{ task.status === 'completed' ? 'Выполнено' : 'В процессе' }}</p>
+  <p>Срок: {{ task.deadline | date:'dd.MM.yyyy' }}</p>
+  <a routerLink="/" class="back-button">Назад к задачам</a>
+</div>

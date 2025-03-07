@@ -1,0 +1,12 @@
+<div class="task-item"
+     [class.completed]="task.status === 'completed'"
+     [routerLink]="['/task', task.id]"  
+style="cursor: pointer">
+<h3>{{ task.title }}</h3>
+<p>Категория: {{ task.category }}</p>
+<p>Срок: {{ task.deadline | date:'dd.MM.yyyy' }}</p>
+<button *ngIf="task.status === 'pending'"
+        (click)="markAsCompleted(); $event.stopPropagation()">
+  Отметить как выполненную
+</button>
+</div>
